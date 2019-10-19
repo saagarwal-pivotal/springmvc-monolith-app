@@ -20,7 +20,7 @@
 # JMX and micrometer integration
 
 ```
-// Below method binds the jvm memory metrics to micrometer
+// Below method binds the jvm memory metrics to micrometer and can be exposed via jmx by binding to jmx registry
 
 MeterRegistry registry = jvmMicroMeterJmxMonitoring();
 		new JvmMemoryMetrics().bindTo(registry);
