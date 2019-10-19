@@ -22,6 +22,7 @@ public class MonolithicController {
 	public ModelAndView showMessage(
 			@RequestParam(value = "name", required = false, defaultValue = "JavaIsOcean") String name) {
 		ModelAndView mv = new ModelAndView("welcome");
+		// jvm micrometer registry code needs to be refactored and should not be called for every request.
 		MeterRegistry registry = jvmMicroMeterJmxMonitoring();
 		new JvmMemoryMetrics().bindTo(registry);
 		mv.addObject("name", name);
