@@ -66,5 +66,7 @@ Adding above lines to tomcat-users.xml gives visibility to jmx metrics
  
  ```
  cf ssh-enabled monolithic-springmvc
+ cf ssh monolithic-springmvc
+
 
  ```
