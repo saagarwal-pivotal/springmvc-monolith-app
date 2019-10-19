@@ -61,3 +61,10 @@ Adding above lines to tomcat-users.xml gives visibility to jmx metrics
  
  cf ssh -N -T -L 5000:localhost:5000 monolithic-springmvc
  ```
+ 
+ # Enable ssh into pcf
+ 
+ ```
+ cf ssh-enabled monolithic-springmvc
+
+ ```
