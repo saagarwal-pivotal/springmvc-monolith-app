@@ -52,7 +52,7 @@ Adding above lines to tomcat-users.xml gives visibility to jmx metrics
 
  cf push monolithic-springmvc -p ./target/monolithic-springmvc.war
  
- # Enabling jmx in pcf
+ # Remotely Monitor Java Applications Deployed on PCF-via-JMX
  
  ```
  cf set-env monolithic-springmvc JBP_CONFIG_DEBUG '{enabled: true}'
