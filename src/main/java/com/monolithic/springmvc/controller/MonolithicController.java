@@ -33,7 +33,6 @@ public class MonolithicController {
 
 
 	public  MeterRegistry jvmMicroMeterJmxMonitoring() {
-		// Pick a monitoring system here to use in your samples.
 		return new JmxMeterRegistry(JmxConfig.DEFAULT, Clock.SYSTEM, HierarchicalNameMapper.DEFAULT);
 }
 }
